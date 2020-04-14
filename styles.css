@@ -16,8 +16,9 @@ body{
     line-height: 1.4;
 }
 a:link,
-a:active {
+a:visited {
     text-decoration: none;
+    color: white;
 }
 
 /* The Start of Heading */
@@ -57,6 +58,11 @@ a:active {
     align-items: center;
     width: 100%;
     height: 100vh;
+    text-align: center;
+}
+.bio {
+    font-size: .5 rem;
+    width: 70vw
 }
 #welcome-section h1 {
     margin-top: ;
@@ -86,11 +92,6 @@ a:active {
     border-bottom: .2rem solid white ;
 }
 /* Here I'm using float grid*/
-/* .grid{
-    width: 100%;
-    margin: 0 auto;
-    
-} */
 .row{
     margin: 0 auto;
 }
@@ -120,5 +121,78 @@ a:active {
     background-color: #303841;
     color: white;
 }
-
+.btn {
+    background-color: #303841;
+    color: white;
+    cursor: pointer;
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    border-radius: .4rem;
+    display: inline-block;
+    transition: background .3s ease-out;
+}
+.btn:hover {
+    background-color: #BE3144;
+}
 /* End of Project */
+
+/* Start Content Section */
+.contact-section{
+    height: 80vh;
+    background-color: #303841;
+    padding: 0 2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+}
+
+.contact-section a {
+    font-size: 2.4rem;
+    text-shadow: .2rem .2rem .1rem #1f1f1f;
+    transition: transform .3s ease-out;
+    padding: 1rem 2rem;
+    display: inline-block;
+}
+.contact-section h2 {
+    font-size: 6rem;
+    font-family: 'Raleway';
+    font-weight: 700;
+}
+.contact-section p {
+    font-style: italic;
+    font-size: 2rem;
+    font-weight: 300;
+}
+.contact-section a:first-child{
+    margin-top: 4rem;
+}
+.contact-section a:hover {
+    transform: translateY(.8rem);
+}
+
+/*End Content Section */
+
+/* Start Of Footer */
+footer {
+    border-top: 4px solid #be3144;
+    background-color: #303841;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    font-weight: 500;
+    color: white;
+}
+footer p {
+    margin: 2rem;
+}
+.fab {
+    font-family: '"Font Awesome 5 Brands"';
+}
+.fa-free-code-camp::after{
+    content: '"\f2c5"';
+}
+/* End Of footer */
